@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="largest-number"></p>
+
+    <script>
+       let number1 = prompt ("Enter 1st number");
+       let number2 = prompt ("Enter 2nd number");
+       let number3 = prompt ("Enter 3rd number");
+
+      
+       number1=Number(number1)
+       number2=Number(number2)
+       number3=Number(number3)
+
+       if(number1 > number2 && number1 > number3){
+        document.getElementById("largest-number").innerHTML ="Largest number is "+ number1;
+       }
+       else if(number2 > number1 && number2 > number3){
+        document.getElementById("largest-number").innerHTML ="Largest number is "+ number2;
+       }
+       else{
+        document.getElementById("largest-number").innerHTML ="Largest number is "+ number3;
+       }
+
+    </script>
+</body>
+</html>

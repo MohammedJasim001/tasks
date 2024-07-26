@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="day9-task1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="odd-even"></p>
+    <script >
+       let number=prompt("Enter a number");
+
+        number=Number(number)
+
+        if(number%2==0){
+            
+            document.getElementById("odd-even").innerHTML="Odd number";
+        }
+        else if(number%2==1){
+            document.getElementById("odd-even").innerHTML="Odd number";
+        }
+        else{
+            document.getElementById("odd-even").innerHTML="Please enter a number";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

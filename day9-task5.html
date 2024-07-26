@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="grade"></p>
+
+    <script>
+      let mark=prompt("Enter your mark");
+      mark=Number(mark)
+
+        if( mark >= 90 && mark <= 100 ){
+            document.getElementById("grade").innerHTML = "S grade";
+        }
+        else if ( mark >= 80 && mark < 90 ){
+            document.getElementById("grade").innerHTML = "A grade";
+        }
+        else if ( mark >= 70 && mark < 80 ){
+            document.getElementById("grade").innerHTML = "B grade";
+        } 
+        else if ( mark >= 60 && mark < 70 ){
+            document.getElementById("grade").innerHTML = "C grade";
+        }
+        else if ( mark >= 50 && mark < 60 ){
+            document.getElementById("grade").innerHTML = "D grade";
+        }
+        else if ( mark >= 40 && mark < 50 ){
+            document.getElementById("grade").innerHTML = "E grade";
+        }
+        else if ( mark >= 0 && mark < 40 ){
+            document.getElementById("grade").innerHTML = "Students has faild";
+        }
+        else{
+            document.getElementById("grade").innerHTML = "Invalid marks";
+        }
+
+    </script>
+
+</body>
+</html>

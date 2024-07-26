@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="leap-year"></p>
+
+    <script >
+
+       let year = prompt ("Enter a year");
+
+        year=Number(year)
+         
+        if ( year % 4 == 0 && year % 100 != 0 || year % 400 ==0) {
+            document.getElementById("leap-year").innerHTML = year + " is Leap year";
+        }
+        else { 
+            document.getElementById("leap-year").innerHTML = year + " is not Leap year";
+        }
+
+    </script>
+</body>
+</html>
